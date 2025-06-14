@@ -1,6 +1,14 @@
-def counter():
-    return elementos
+def counter(palavras):
+    lista = palavras.split(' ')
+    dicionario = {}
+    
+    for palavra in lista:
+        if not palavra in dicionario.keys():
+            dicionario[palavra] = lista.count(palavra)
+    return dicionario
 
-elementos = {"html" : 1,"css": 2,"css" : 2,"java":2,"java" : 2,"pyton" : 3,"pyton" : 3,"pyton" : 3}
+linguagens = 'Java Java Java Javascript Pyton Ruby Ruby Cobol Java Javascipt Pyton'
 
-print(elementos)
+print('Quantidade de frequencia')
+print('-'*100)
+print(counter(linguagens))

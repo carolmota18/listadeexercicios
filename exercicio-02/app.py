@@ -1,10 +1,7 @@
+def ordernar_tuplas(lista_tuplas):
+    lista_odernada = sorted(lista_tuplas,key=lambda tupla:tupla[1])
+    return lista_odernada
 
-tupla_nomes = ("Marina","Julia","Bia","Laura","Diana")
+lista = [('Samuel',3), ('Karynne',20),('Carol',22),('Suelem',21),('Romulo',15)]
 
-tupla_idades = ("22","25","29","21","30")
-
-lista_de_tuplas = [(tupla_nomes),(tupla_idades)]
-
-lista_de_tuplas.sort()
-
-print(lista_de_tuplas)
+print(f'AS tuplas ordernadadas por idade:{ordernar_tuplas(lista)}')
